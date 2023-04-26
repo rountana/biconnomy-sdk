@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 const Index = () => {
   const SocialLoginDynamic = dynamic(
-    () => import("../components/Scw").then((res) => res.default),
+    () => import("../components/Auth").then((res) => res.default),
     {
       ssr: false,
     }

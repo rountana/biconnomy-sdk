@@ -11,6 +11,21 @@ async function initialize() {
     // pops up the UI widget
     socialLogin.showWallet();
 
+
+    if (socialLogin) 
+    {
+      console.log("Social Login Object" )
+    }
+  //   if (!socialLogin?.provider) return;
+  //   // create a provider from the social login provider that 
+  //   // will be used by the smart account package of the Biconomy SDK
+  //   const provider = new ethers.providers.Web3Provider(
+  //       socialLogin.provider,
+  //   );
+  // // get list of accounts available with the provider
+  //   const accounts = await provider.listAccounts();
+  //   console.log("EOA address", accounts)
+
 }
   export default function Scw() {
     React.useEffect(() => {
